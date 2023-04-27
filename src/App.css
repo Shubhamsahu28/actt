@@ -1,0 +1,1853 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+  
+}
+.App {
+  width: 100%;
+  /* overflow-x: hidden; */
+  /* margin: 0 auto ; */
+  overflow-x: hidden;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.slide{
+  height: 4px;
+  margin-bottom: 5px;
+}
+.slide1 > .swiper-button-next{
+  top: 410px !important;
+  right: 500px !important;
+  border-radius: 50% !important;
+  box-shadow: 0px 3px 9px -2px black;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 2px;
+}
+.slide1 > .swiper-button-prev{
+  top: 410px !important;
+  left: 500px !important;
+  /* border: 1px white solid; */
+  border-radius: 50% !important;
+  box-shadow: 0px 3px 9px -2px black;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 2px;
+}
+.slide2 > .swiper-button-next{
+  top: 525px !important;
+  right: 500px !important;
+  border-radius: 50% !important;
+  /* border-radius: 50% !important; */
+  box-shadow: 0px 3px 9px -2px black;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 2px;
+}
+.slide2 > .swiper-button-prev{
+  top: 525px !important;
+  left: 500px !important;
+  /* border: 1px white solid; */
+  border-radius: 50% !important;
+  box-shadow: 0px 3px 9px -2px black;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 2px;
+}
+/* .slide1 .swiper-button-prev:after{
+  position: relative !important;
+  top: 100px !important;
+  left:560px;
+  color: cyan;
+
+} */
+/* .slide1 > .swiper-button-next:after{
+  position: relative !important;
+  top: 150px !important;
+  right:560px;
+  color: cyan;
+
+} */
+.swiper-button-prev:after{
+  position: relative !important;
+  top: 0px !important;
+  left:-3px;
+  color: cyan;
+  font-size: 36px !important;
+}
+.swiper-button-next:after{
+    position: relative !important;
+    top: 0px !important;
+    right:-3px;
+    color: cyan;
+    font-size: 36px !important;
+  
+  }
+  .slide1 .swiper-button-prev:after{
+    position: relative !important;
+    top: 0px !important;
+    left: -3px;
+    color: cyan;
+    font-size: 36px !important;
+  }
+  .slide1 .swiper-button-next:after{
+      position: relative !important;
+      top: 0px !important;
+      right: -3px;
+      color: cyan;
+      font-size: 36px !important;
+}
+    
+
+.swiper-pagination-bullets {
+  display: none;}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+  display: none;
+}
+
+
+.swiper-vertical>.swiper-scrollbar{
+  display: none !important;
+}
+
+/* .swiper-horizontal > .swiper-pagination-bullets{
+  display: inline ;
+  
+} */
+.swiper-vertical > .swiper-pagination-bullets{
+  display: inline ;
+  
+}
+
+.swiper-pagination-bullets > .swiper-pagination-bullet {
+  background-color: rgb(118, 223, 223) !important;
+}
+.pic >  .swiper-pagination-bullets > .swiper-pagination-bullet{
+ background-color: rgb(0, 255, 255) !important;
+}  
+.pic >  .swiper-pagination-bullets{
+  /* position: relative; */
+   right: 2px !important;
+   bottom: 4px !important;  
+}
+
+.onHover:hover{
+  box-shadow: 0px 2px 34px #E0FAFF;
+}
+.gh:hover{
+  box-shadow: 1px 1px 1px 1px ;
+  background-color: aqua;
+}
+.staff{
+   /* display: grid;  */
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 50px;
+  
+  
+}
+
+.shadow1
+{
+  /* box-shadow: ; */
+}
+.shadow1:hover
+{
+  box-shadow: 0px 0px 10px grey ;
+  transition: 1s;
+  opacity: 10px;
+}
+.image
+{
+   background-image: url("image/Mission.jpg");
+   background-size: 100% 100%;
+   height: 430px;
+}
+.image2
+{
+   background-image: url("image/Aboutus.jpg");
+   background-size: 100% 100%;
+   height: 430px;
+}
+.image3
+{
+   background-image: url("image/vission.jpeg");
+   background-size: 100% 100%;
+   height: 430px;
+}
+.image1
+{
+   background-image: url("image/Values.jpg");
+   background-size: 100% 100%;
+   height: 450px;
+}
+.margin3{
+  display: grid;
+  justify-content: end;
+}
+ .align
+{
+  text-align: start;
+  
+} 
+
+.read_more {
+  margin-top: 10px; 
+  width: 120px; 
+  height: 35px; 
+  background: #26695c; 
+  color: #FFFFFF; 
+  font-size: 18px; 
+  border-radius: 3px; 
+  border: none;
+}
+
+
+.about_karam {
+  margin-left: 35px;
+}
+/* 
+.slide_button {
+  position: absolute;
+  top: -50px;
+}
+ */
+
+.vision {
+  margin-left: 70px;
+}
+.mission {
+  margin-left: 70px;
+}
+
+.value-h {
+  margin-left: 70px;
+}
+
+.about_karamai {
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.about_service, .work_flex, .text_drive {
+  margin-left: -900px;
+}
+
+.helpp{
+  margin-left: -580px;
+} 
+
+@media (min-width: 893px) and (max-width: 1082px) {
+
+  .IBM_para {
+    margin-top: -10px;
+    font-size: 14px;
+  }
+  .techno {
+    margin-top: 30px;
+  } 
+  .techno_para {
+    font-size: 14px;
+  }
+
+
+  /* Naps Section Start */
+
+  .naps_about {
+    padding-top: 350px;
+  }
+
+  .naps_head {
+    margin-top: 0px;
+    font-size: 32px;
+  }
+
+  .agree {
+    font-size: 32px;
+  }
+  .benefit {
+    font-size: 28px;
+  }
+
+  /* Naps section End */
+
+  /* Werehousing start */
+  .abo_services {
+    margin-left: -580px;
+  }
+
+  .abo_services_head {
+    font-size: 30px;
+  }
+
+  .verticals {
+    font-size: 30px;
+  }
+
+  /* Werehousing End */
+ 
+  .contact_div {
+    margin-top: -40px;
+  }
+  .home_img{
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  .address {
+    width: 250px;
+  }
+  .call_section{
+    margin-top: -40px;
+  }
+  .call_img {
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
+  }
+  .work_img {
+    margin-top: 15px;
+    height: 40px;
+    width: 40px;
+  }
+  .work_section{
+    margin-top: -40px;
+  }
+  .about {
+    margin-top: -40px;
+  }
+  .about_section {
+    margin-top: 80px;
+  }
+  .para {
+    margin-top: 230px;
+  }
+  .values {
+    margin-top: 100px;
+  }
+  .values_section {
+    margin-top: 250px;
+  }
+
+  .philosophy {
+    margin-top: 200px;
+  }
+  .navv {
+    margin-top: -10px;
+    width: 90%;
+    font-size: 14px;
+  }
+ 
+  .logo_img {
+    margin-top: 0px;
+  }
+
+  .navv a {
+    margin-right: -5px;
+  }
+
+}
+
+@media (min-width: 797px) and (max-width: 892px) {
+  .IBM_para {
+    margin-top: -10px;
+    font-size: 14px;
+  }
+  .techno {
+    margin-top: 30px;
+  } 
+  .techno_para {
+    font-size: 14px;
+  }
+
+
+  /* WorkForce Start */
+
+  .workforce_about {
+    padding-top: 100px;
+  }
+
+  /* WorkForce End */
+
+    /* Naps Section Start */
+
+    .naps_about {
+      padding-top: 500px;
+    }
+  
+    .naps_head {
+      margin-top: 0px;
+      font-size: 28px;
+    }
+  
+    .agree {
+      font-size: 28px;
+    }
+    .benefit {
+      font-size: 28px;
+    }
+  
+    /* Naps section End */
+
+   /* Werehousing start */
+   .abo_services {
+    margin-left: -420px;
+  }
+
+  .abo_services_head {
+    font-size: 25px;
+  }
+
+  .verticals {
+    font-size: 25px;
+  }
+
+  /* Werehousing End */
+   
+  /* Temporary Staffing Start */
+
+  .about_service {
+    padding-top: 80px;
+    margin-bottom: -10px;
+  }
+
+  .about_service, .work_flex, .text_drive {
+    margin-left: -400px;
+  }
+
+  .helpp {
+    margin-left: -100px;
+  }
+
+  /* Temporary Staffing End */
+
+  /* NAvbar */
+
+  .about {
+    margin-top: -40px;
+  }
+  .about_section {
+    margin-top: 70px;
+  }
+
+  .navv {
+    margin-top: -10px;
+    width: 90%;
+    font-size: 14px;
+  }
+ 
+  .logo_img {
+    margin-top: 0px;
+  }
+
+  .navv a {
+    margin-right: -5px;
+  }
+
+  /* Navbar */
+ .about_section {
+  padding-top: 70px;
+ }
+  .mission {
+    padding-top: -40px;
+  }
+  .para {
+    padding-top: 200px;
+  }
+  .values {
+    padding-top: 80px;
+  }
+  .values_section {
+    padding-top: 220px;
+  }
+  .philosophy {
+    padding-top: 200px;
+  }
+  .Quicks{
+    margin-left: -30px;
+    width: 200px;
+  }
+  .servi{
+    width: 150px;
+  }
+  .services_list{
+    margin-top: 20px;
+  }
+  .contact_div{
+    margin-top: -40px;
+  }
+  .address{
+    width: 220px;
+  }
+  .location_img{
+    height: 20px;
+    min-width: 20px;
+    
+  }
+  .form_para
+  {
+    width: 100%;
+  }
+  .phone_para{
+    margin-top: -5px;
+  }
+  .email_img {
+    height: 20px;
+    min-width: 20px;
+  }
+  .phone_img{
+    height: 20px;
+    min-width: 20px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 796px) {
+  .IBM_para {
+    margin-top: -10px;
+    font-size: 12.5px;
+  }
+  .techno {
+    margin-top: 30px;
+  } 
+  .techno_para {
+    font-size: 13px;
+  }
+
+  
+  /* WorkForce Start */
+
+  .workforce_about {
+    padding-top: 100px;
+  }
+
+  /* WorkForce End */
+  
+  /* Naps Section Start */
+
+    .nats_para, .agree_para, .benefit_para, .naps_para {
+      font-size: 16px;
+    }
+
+    .naps_about {
+      padding-top: 500px;
+    }
+  
+    .naps_head {
+      margin-top: 0px;
+      font-size: 24px;
+    }
+  
+    .agree {
+      font-size: 24px;
+    }
+    .benefit {
+      font-size: 24px;
+    }
+  
+    /* Naps section End */
+
+
+   /* Werehousing start */
+   .abo_services {
+    margin-left: -320px;
+  }
+
+  .abo_services_head {
+    font-size: 23px;
+  }
+
+  .verticals {
+    font-size: 23px;
+  }
+
+  /* Werehousing End */
+   /* Temporary Staffing Start */
+
+   .about_service {
+    padding-top: 170px;
+    margin-right: -80px;
+    margin-bottom: -10px;
+  }
+
+  .about_service, .work_flex {
+    margin-left: -300px;
+  }
+
+  .text_drive{
+    margin-left: -320px;
+  }
+
+  .helpp {
+    margin-left: -40px;
+  }
+
+  /* Temporary Staffing End */
+
+  
+  .address {
+    min-width: 300px;
+  }
+  .navv {
+    margin-top: -10px;
+    width: 90%;
+    font-size: 14px;
+  }
+ 
+  .logo_img {
+    margin-top: 0px;
+  }
+
+  .navv a {
+    margin-right: -5px;
+  }
+
+  .about_section {
+    margin-top: 200px;
+    /* padding-top: 200px; */
+  }
+  .vision {
+    padding-top: 60px;
+  }
+  .para {
+    padding-top: 320px;
+  }
+  .values {
+    padding-top: 180px;
+  }
+  .values_section {
+    padding-top: 400px;
+  }
+  .philosophy {
+    padding-top: 350px;
+  }
+  .philosophy_para {
+    text-align: center;
+    margin-left: 80px;
+  }
+  .contact_s_footer {
+    min-width: 250px;
+  }
+  .location_img {
+    height: 15px;
+    min-width: 15px;
+  }
+   .phone_para {
+    margin-top: -5px;
+   }
+   .email_img {
+    height: 15px;
+    min-width: 15px;
+   }
+   .Quicks {
+    margin-left: -60px;
+    min-width: 170px;
+   }
+   .servi {
+    min-width: 150px;
+   }
+   .services_list {
+    margin-top: 20px;
+   }
+   .social {
+    margin-top: 80px;
+   }
+   .karam {
+    margin-top: -30px;
+   }
+   .karam_para {
+    margin-top: 150px;
+   }
+   .about_karam {
+    padding-top: 100px;
+   }
+   /* .slide_button {
+    margin-top: 100px;
+   } */
+   .contain {
+    margin-top: -50px;
+    padding-bottom: 90px;
+   }
+   .contact_div {
+    margin-left: -20px;
+    min-width: 240px;
+    margin-top: -40px;
+   }
+   .home_img {
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
+    margin-right: 80px;
+   }
+   .add_head {
+    margin-left: -20px;
+   }
+   .address {
+    margin-left: -40px;
+    width: 200px;
+    font-size: 16px;
+   }
+   .call_section {
+    margin-left: -30px;
+    width: 250px;
+    margin-top: -20px;
+   }
+   .call_para {
+    width: 180px;
+    margin-left: -40px;
+   }
+   .call_head {
+    margin-top: -15px;
+    margin-left: -20px;
+   }
+   .call_img {
+    height: 25px;
+    width: 25px;
+    margin-right: 60px;
+   }
+
+   .work_section {
+    margin-left: -20px;
+    margin-top: -20px;
+    width: 200px;
+   }
+   .work_head {
+    margin-top: -15px;
+    margin-left: -20px;
+    width: 200px;
+   }
+   .work_img {
+    height: 25px;
+    width: 25px;
+    margin-right: 60px;
+   }
+
+   .work_para {
+    margin-left: -40px;
+    width: 200px;
+   }
+   .form_section {
+    margin-top: 40px;
+   }
+   .form_head {
+    margin-top: 10px;
+    width: 100%;
+   }
+   .form_para {
+    
+    width: 100%;
+   }
+   
+}
+
+@media (min-width: 641px) and (max-width: 680px) {
+  .IBM_para {
+    margin-top: -10px;
+    font-size: 12px;
+  }
+  .techno {
+    margin-top: 30px;
+  } 
+  .techno_para {
+    font-size: 12px;
+  }
+  
+  /* WorkForce Start */
+
+  .workforce_about {
+    padding-top: 140px;
+  }
+
+  /* WorkForce End */
+  
+  /* Naps Section Start */
+
+    .nats {
+      margin-top: -50px;
+    }
+
+    .nats_para, .agree_para, .benefit_para, .naps_para {
+      font-size: 16px;
+    }
+
+    .naps_about {
+      padding-top: 700px;
+    }
+  
+    .naps_head {
+      margin-top: 0px;
+      font-size: 22px;
+    }
+  
+    .agree {
+      margin-left: -30px;
+      font-size: 22px;
+    }
+    .benefit {
+      margin-left: -60px;
+      font-size: 22px;
+    }
+  
+    /* Naps section End */
+
+  
+  /* Werehousing start */
+
+  .abo_services_head {
+    font-size: 20px;
+  }
+  .abo_services_para {
+    font-size: 18px;
+  }
+
+  .verticals_para {
+    font-size: 18px; 
+  }
+
+  .verticals {
+    font-size: 20px;
+  }
+
+  /* Werehousing End */
+
+ 
+  /* Temporary Staffing Start */
+
+   .temp_para {
+    margin-top: -40px;
+   }
+
+   .about_service {
+    padding-top: 170px;
+    margin-right: -80px;
+    margin-bottom: -10px;
+  }
+
+  .about_service{
+    margin-left: -300px;
+  }
+  .work_flex {
+    margin-left: -200px;
+  } 
+  .text_drive{
+    margin-left: -320px;
+  }
+
+  .helpp {
+    margin-left: -40px;
+  }
+
+  /* Temporary Staffing End */
+
+  .navv .three {
+    margin-right: -40px;
+  }
+}
+
+@media only screen and (max-width: 723px) {
+  .navv .three {
+    margin-right: -50px;
+  }
+}
+
+/* @media only screen and (max-width: 522px){
+  .about {
+    margin-top: 40px;
+  }
+  .about_parag {
+    margin-top: -170px;
+  }
+  .mission {
+    margin-top: 30px;
+  }
+  .para {
+    margin-top: -280px;
+  }
+  .values {
+    margin-top: -180px;
+  }
+  .values_section {
+    margin-top: -360px;
+  }
+  .philosophy {
+    margin-top: -300px;
+  }
+  .philosophy_para {
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+  .the_team {
+    margin-top: 40px;
+  }
+ .phone_img {
+  height: 20px;
+ }
+ .phone_para{
+  margin-left: 10px;
+ }
+ .email_p {
+  margin-left: 15px;
+ }
+ .Quicks {
+  margin-left: 20px;
+ }
+ .quick_list {
+  margin-left: -60px;
+ }
+ .servi {
+  margin-left: -30px;
+ }
+ .services_list {
+  margin-top: 10px;
+  margin-left: -50px;
+ }
+ .social {
+  margin-top: 20px;
+ }
+ .karam {
+  margin-left: 15px;
+  margin-top: 40px;
+ }
+ .karam_para {
+  margin-top: 20px;
+ }
+ .call_section {
+  margin-top: 30px;
+ }
+ .work_section{
+  margin-left: 20px;
+  margin-top: 30px;
+ }
+ .add_head {
+  margin-left: -110px;
+ }
+ .address {
+  margin-left: -110px;
+ }
+ .call_para {
+  margin-left: -23px;
+ }
+ .work_para{
+  min-width: 200px;
+  margin-left: -20px;
+ }
+ .let_head {
+  margin-left: 15px;
+  margin-top: 40px;
+ }
+} */
+
+@media (min-width: 522px) and (max-width: 640px) {
+  
+  /* WorkForce Start */
+
+  .work_paragraph {
+    margin-top: -60px;
+  }
+
+  /* WorkForce End */
+  
+  
+  /* Werehousing start */
+  .abo_services {
+    font-size: 36px;
+    margin-left: -280px;
+  }
+
+  .abo_services_head {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .abo_services_para {
+    font-size: 18px;
+  }
+
+  .verticals_para {
+    font-size: 18px; 
+  }
+
+  .permanent_para {
+    margin-top: -70px;
+  }
+
+  .verticals {
+    font-size: 22px;
+  }
+
+  /* Werehousing End */
+  
+  
+  /* Temporary Staffing Start */
+
+    .temp_para {
+      margin-top: -60px;
+     }
+  
+     .about_service {
+      padding-top: 10px;
+      margin-right: 120px;
+      margin-bottom: 40px;
+    }
+  
+    .about_service{
+      margin-left: -300px;
+    }
+    .work_flex {
+      margin-left: -400px;
+    } 
+    .text_drive{
+      margin-left: -480px;
+    }
+  
+    .helpp {
+      margin-left: -200px;
+    }
+  
+    /* Temporary Staffing End */
+  
+  
+  .home_img {
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 40px;
+    height: 40px;
+  }
+  .call_img {
+    margin-top: 15px;
+    margin-left: 70px;
+    width: 40px;
+    height: 40px;
+  }
+  .work_img {
+    margin-top: 15px;
+    margin-left: 110px;
+    width: 50px;
+    height: 50px;
+  }
+  .vision {
+    margin-left: 20px;
+  }
+  .mission {
+    margin-left: 20px;
+  }
+  .values {
+    margin-left: -50px;
+  }
+  .values_section {
+    margin-top: -50px;
+  }
+  .let_head {
+    margin-top: 40px;
+  }
+  .about_karam{
+    margin-left: 20px;
+  }
+  .about_karamai {
+    margin-left: 10px;
+    margin-bottom: -100px;
+  }
+  .Quicks {
+    margin-left: 30px;
+  }
+  .quick_list {
+    margin-left: -60px;
+  }
+  .services_list {
+    margin-left: -50px;
+  }
+  .about {
+    margin-top: 30px;
+  }
+  .the_team {
+    margin-top: 30px;
+  }
+  .email_p, .phone_para {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .email_img, .phone_img {
+    margin-top: 10px;
+  }
+  .quick_list, .services_list, .werehouse {
+    font-size: 14px;
+  }
+  .about_karamai {
+    margin-top: -30px;
+  }
+  .work_head, .work_para{
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 522px){
+   /* WorkForce Start */
+
+   .work_paragraph {
+    margin-top: -60px;
+  }
+
+  /* WorkForce End */
+  /* Werehousing start */
+  .abo_services {
+    font-size: 36px;
+    margin-left: -150px;
+  }
+
+  .abo_services_head {
+
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .abo_services_para {
+    font-size: 18px;
+  }
+
+  .verticals_para {
+    font-size: 18px; 
+  }
+
+  .permanent_para {
+    margin-top: -70px;
+  }
+
+  .verticals {
+    font-size: 22px;
+  }
+
+  /* Werehousing End */
+  
+  
+  /* Temporary Staffing Start */
+
+     .temp_para {
+      margin-top: -60px;
+     }
+  
+     .about_service {
+      padding-top: 10px;
+      margin-right: 80px;
+      margin-bottom: 40px;
+
+    }
+  
+    .about_service{
+      margin-left: -170px;
+    }
+    .work_flex {
+      margin-left: -230px;
+    } 
+    .text_drive{
+      margin-left: -300px;
+    }
+  
+    .helpp {
+      margin-left: -50px;
+    }
+  
+    /* Temporary Staffing End */
+  
+  
+ 
+  .about {
+    margin-top: 30px;
+  }
+  .about_section{
+    margin-top: -20px;
+  }
+  .vision{
+    margin-top: 20px;
+  }
+  .vision_section {
+    margin-top: -20px;
+  }
+  .mission {
+    margin-top: 20px;
+  }
+  .para {
+    margin-top: -20px;
+  }
+  .values {
+    margin-top: 20px;
+  }
+  /* .values_section {
+    margin-top: -20px;
+  } */
+  .let_head {
+    margin-top: 30px;
+  }
+ .about_karam {
+  margin-left: 20px;
+ }
+  .services_list {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .quick_list {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .werehouse {
+    font-size: 14px;
+  }
+  .phone_img {
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+  }
+  .location_footer_para {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .email_p {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  .email_img{
+    width: 20px;
+    margin-top: 0px;
+  }
+  .phone_para{
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .contact_div {
+    margin-top: -30px;
+  }
+  .address {
+    font-size: 14px;
+    min-width: 200px;
+  }
+  .home_img {
+    margin-top: 15px;
+    margin-left: 0px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .call_img {
+    margin-top: 15px;
+    margin-left: -20px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .call_head{
+    margin-left: 10px;
+  }
+  .call_para {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+  .work_head, .work_para {
+    margin-left: 0px;
+  }
+  .work_para{
+    font-size: 16px;
+    margin-left: 0px;
+    padding-bottom: 20px;
+  }
+  .work_img {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .call_section{
+    margin-top: 10px;
+   }
+   .work_section{
+    margin-top: 20px;
+   }
+  .vision {
+    margin-left: 20px;
+  }
+  .mission {
+    margin-left: 20px;
+  }
+  .values {
+    margin-left: -50px;
+  }
+  .values_section {
+    margin-top: -40px;
+  }
+  .Quicks{
+    margin-left: 0px;
+  }
+  .quick_list{
+    margin-left: -30px;
+  }
+  .servi {
+    margin-right: 0px;
+  }
+  .services_list{
+    margin-left: -40px;
+  }
+  .contact_div {
+    margin-top: -30px;
+  }
+  .home_img {
+    margin-top: 15px;
+    margin-left: 100px;
+    min-width: 45px;
+    min-height: 45px;
+  }
+  .call_img {
+    margin-top: 15px;
+    margin-left: 70px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  .work_img {
+    margin-top: 15px;
+    margin-left: 110px;
+    min-width: 45px;
+    min-height: 45px;
+  }
+  .call_section{
+    margin-top: 20px;
+   }
+   .work_section{
+    margin-top: 20px;
+   }
+  .vision {
+    margin-left: 20px;
+  }
+  .mission {
+    margin-left: 20px;
+  }
+  .values {
+    margin-left: -50px;
+  }
+  .values_section {
+    margin-top: -50px;
+  }
+ 
+   .let_head{
+    margin-top: 30px;
+   }   
+   .about {
+    margin-top: 30px;
+   }
+}
+
+
+@media (min-width: 375px) and (max-width: 399px) {
+   /* WorkForce Start */
+
+   .work_paragraph {
+    margin-top: -60px;
+  }
+
+  /* WorkForce End */
+  /* Werehousing start */
+  .abo_services {
+    font-size: 36px;
+    margin-left: -150px;
+  }
+
+  .abo_services_head {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .abo_services_para {
+    font-size: 18px;
+  }
+
+  .verticals_para {
+    font-size: 18px; 
+  }
+
+  .permanent_para {
+    margin-top: -70px;
+  }
+
+  .verticals {
+    font-size: 22px;
+  }
+
+  /* Werehousing End */
+  
+  
+  /* Temporary Staffing Start */
+
+    .temp_para {
+      margin-top: -60px;
+     }
+  
+     .about_service {
+      padding-top: 10px;
+      margin-right: 120px;
+      margin-bottom: 40px;
+    }
+  
+    .about_service{
+      margin-left: -60px;
+    }
+    .work_flex {
+      margin-left: -170px;
+    } 
+    .text_drive{
+      margin-left: -230px;
+    }
+  
+    .helpp {
+      margin-left: 0px;
+    }
+  
+    /* Temporary Staffing End */
+  .about {
+    margin-top: 30px;
+  }
+  .about_section{
+    margin-top: -20px;
+  }
+  .vision{
+    margin-top: 20px;
+  }
+  .vision_section {
+    margin-top: -20px;
+  }
+  .mission {
+    margin-top: 20px;
+  }
+  .para {
+    margin-top: -20px;
+  }
+  .values {
+    margin-top: 20px;
+  }
+  /* .values_section {
+    margin-top: -20px;
+  } */
+  .let_head {
+    margin-top: 30px;
+  }
+ .about_karam {
+  margin-left: 20px;
+ }
+  .services_list {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .quick_list {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .werehouse {
+    font-size: 12px;
+  }
+  .phone_img {
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+  }
+  .location_footer_para {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .email_p {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  
+  .email_img{
+    width: 20px;
+    margin-top: 0px;
+  }
+  .phone_para{
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .contact_div {
+    margin-top: -30px;
+  }
+  .address {
+    font-size: 14px;
+    min-width: 200px;
+  }
+  .home_img {
+    margin-top: 15px;
+    margin-left: 0px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .call_img {
+    margin-top: 15px;
+    margin-left: -20px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .call_head{
+    margin-left: 10px;
+  }
+  .call_para {
+    font-size: 14px;
+    margin-left: -60px;
+  }
+  .work_head, .work_para {
+    margin-left: -20px;
+  }
+  .work_para{
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .work_img {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .call_section{
+    margin-top: 10px;
+   }
+   .work_section{
+    margin-top: 20px;
+   }
+  .vision {
+    margin-left: 20px;
+  }
+  .mission {
+    margin-left: 20px;
+  }
+  .values {
+    margin-left: -50px;
+  }
+  .values_section {
+    margin-top: -40px;
+  }
+  .Quicks{
+    margin-left: -30px;
+  }
+  .quick_list{
+    margin-left: -20px;
+  }
+  .servi {
+    margin-right: -20px;
+  }
+  .services_list{
+    margin-left: -20px;
+  }
+  .contact_div {
+    margin-top: -30px;
+  }
+  .location_img{
+    width: 20px;
+  }
+  .home_img {
+    margin-top: 15px;
+    margin-left: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  .call_img {
+    margin-top: 15px;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+  }
+  .call_head{
+    margin-left: -60px;
+  }
+  .call_para {
+    margin-left: -60px;
+  }
+  .work_head, .work_para {
+    margin-left: -60px;
+  }
+  .work_img {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  .call_section{
+    margin-top: 20px;
+   }
+   .work_section{
+    margin-top: 20px;
+   }
+  .vision {
+    margin-left: 20px;
+  }
+  .mission {
+    margin-left: 20px;
+  }
+  .values {
+    margin-left: -50px;
+  }
+  .values_section {
+    margin-top: -50px;
+  }
+  .Quicks{
+    margin-left: 10px;
+  }
+  .servi{
+    margin-left: -50px;
+  }
+  .werehouse {
+    margin-left: -30px;
+  }
+  .add_head {
+    margin-left: -60px;
+  }
+  .address{
+    margin-left: -60px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374px) {
+   /* WorkForce Start */
+
+   .work_paragraph {
+    margin-top: -60px;
+  }
+
+  /* WorkForce End */
+  /* Werehousing start */
+  .abo_services {
+    font-size: 36px;
+    margin-left: -80px;
+  }
+
+  .abo_services_head {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .abo_services_para {
+    font-size: 16px;
+  }
+
+  .verticals_para {
+    font-size: 16px; 
+  }
+
+  .permanent_para {
+    margin-top: -70px;
+  }
+
+  .verticals {
+    font-size: 22px;
+  }
+
+  /* Werehousing End */
+  
+  
+  /* Temporary Staffing Start */
+
+   .temp_para {
+    margin-top: -60px;
+   }
+
+   .about_service {
+    padding-top: 10px;
+    margin-right: 120px;
+    margin-bottom: 40px;
+  }
+
+  .about_service{
+    margin-left: 0px;
+  }
+  .work_flex {
+    margin-left: -100px;
+  } 
+  .text_drive{
+    margin-left: -180px;
+  }
+
+  .helpp {
+
+    margin-left: 0px;
+  }
+
+  /* Temporary Staffing End */
+  .about {
+    margin-top: 30px;
+  }
+  .about_section{
+    margin-top: -20px;
+  }
+  .vision{
+    margin-top: 20px;
+  }
+  .vision_section {
+    margin-top: -20px;
+  }
+  .mission {
+    margin-top: 20px;
+  }
+  .para {
+    margin-top: -20px;
+  }
+  .values {
+    margin-top: 20px;
+  }
+  /* .values_section {
+    margin-top: -20px;
+  } */
+  .let_head {
+    margin-top: 30px;
+  }
+ .about_karam {
+  margin-left: 20px;
+ }
+  .services_list {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .quick_list {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .werehouse {
+    font-size: 12px;
+  }
+  .phone_img {
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+  }
+  .location_footer_para {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .email_p {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  
+  .email_img{
+    width: 20px;
+    margin-top: 0px;
+  }
+  .phone_para{
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .contact_div {
+    margin-top: -30px;
+  }
+  .address {
+    font-size: 14px;
+    min-width: 200px;
+  }
+  .home_img {
+    margin-top: 15px;
+    margin-left: 0px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .call_img {
+    margin-top: 15px;
+    margin-left: -20px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .call_head{
+    margin-left: 10px;
+  }
+  .call_para {
+    font-size: 14px;
+    margin-left: -60px;
+  }
+  .work_head, .work_para {
+    margin-left: -20px;
+  }
+  .work_para{
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .work_img {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .call_section{
+    margin-top: 10px;
+   }
+   .work_section{
+    margin-top: 20px;
+   }
+  .vision {
+    margin-left: 20px;
+  }
+  .mission {
+    margin-left: 20px;
+  }
+  .values {
+    margin-left: -50px;
+  }
+  .values_section {
+    margin-top: -40px;
+  }
+  .Quicks{
+    margin-left: -30px;
+  }
+  .servi {
+    margin-left: -30px;
+  }
+  .home_img {
+    height: 40px;
+    width: 40px;
+  }
+  .call_img {
+    margin-left: -20px;
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+  }
+  .call_head {
+    margin-top: 15px;
+    margin-left: -50px;
+  }
+  .call_para {
+    margin-left: -50px;
+  }
+  .work_img {
+    margin-left: 20px;
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+  }
+  .work_head {
+    margin-left: -50px;
+  }
+  .work_para {
+    margin-left: -50px;
+  }
+}

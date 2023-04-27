@@ -1,0 +1,134 @@
+// :root {
+//     --rad: .7rem;
+//     --dur: .3s;
+//     --color-dark: #2f2f2f;
+//     --color-light: #fff;
+//     --color-brand: #57bd84;
+//     --font-fam: 'Lato', sans-serif;
+//     --height: 40px;
+//     --btn-width: 200px;
+//     --bez: cubic-bezier(0, 0, 0.43, 1.49);
+//   }
+  
+  
+  /* / Main styles */
+  form {
+    position: relative;
+    width: 300px;
+    background: var(--color-brand);
+    border-radius: var(--rad);
+  }
+
+  // input, button {
+  //   height: var(--height);
+  //   font-family: var(--font-fam);
+   
+  //   border: 0;
+  //   color: var(--color-dark);
+  //   font-size: 1.8rem;
+  // }
+
+ .form-control {
+    border-radius: 5px;
+  }
+
+
+  input[type="search"] {
+    outline: 0;
+    width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    // border-radius: var(--rad);
+    border-radius: 5px;
+    // margin-right: -100px;
+    margin-top: -2px;
+    max-height: 30px;
+    appearance: none;
+     border: 1px solid #57bd84;
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+  }
+  button {
+    display: none; 
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: var(--btn-width);
+    font-weight: bold;
+    background: var(--color-brand);
+    border-radius: 0 var(--rad) var(--rad) 0;
+  }
+  input:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+    button {
+        display: block;
+      }
+  }
+
+  
+  label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+
+  @media (min-width: 797px) and (max-width: 892px) {
+    input[type="search"] {
+      outline: 0;
+      width: 200px;
+      margin-top: 0px;
+      border-radius: 5px;
+      max-height: 30px;
+      padding: 0 0.5rem;
+      appearance: none;
+       border: 1px solid #57bd84;
+      transition: all var(--dur) var(--bez);
+      transition-property: width, border-radius;
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 796px) {
+    input[type="search"] {
+      outline: 0;
+      width: 200px;
+      margin-top: 0px;
+      border-radius: 5px;
+      max-height: 30px;
+      padding: 0 0.5rem;
+      appearance: none;
+       border: 1px solid #57bd84;
+      transition: all var(--dur) var(--bez);
+      transition-property: width, border-radius;
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+
+  @media (min-width: 641px) and (max-width: 680px) {
+    input[type="search"] {
+      outline: 0;
+      width: 200px;
+      margin-top: 0px;
+      border-radius: 5px;
+      max-height: 30px;
+      margin-right: -50px;
+      padding: 0 0.5rem;
+      appearance: none;
+       border: 1px solid #57bd84;
+      transition: all var(--dur) var(--bez);
+      transition-property: width, border-radius;
+      z-index: 1;
+      position: relative;
+    }
+  }
